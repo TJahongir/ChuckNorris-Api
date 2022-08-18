@@ -15,7 +15,7 @@ jokeForm.addEventListener('submit',(e) => {
             
         }).then(data => {
             console.log(data);
-            jokeText.innerHTML = data.value.joke;
+            jokeText.innerHTML = data.value;
             jokeText.classList.add('jokeText');
         })
 });
