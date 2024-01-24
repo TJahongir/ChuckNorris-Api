@@ -1,14 +1,12 @@
 const jokeForm = document.getElementById('jokeForm');
 const jokeText = document.getElementById('jokeText');
 const firstNameInput = document.getElementById('firstName');
-const lastNameInput = document.getElementById('lastName');
 
 jokeForm.addEventListener('submit',(e) => {
     e.preventDefault();
-    const firstName = firstNameInput.value || 'Chuck';
-    const lastName = lastNameInput.value || 'Norris';
+    const firstName = firstNameInput.value || 'Chuck Norris';
 
-    const url = `https://api.chucknorris.io/jokes/random?firstName=${firstName}&lastName=${lastName}`;
+    const url = `https://api.chucknorris.io/jokes/random?name=${firstname}`;
     fetch(url)
         .then( res => {
             return res.json();
