@@ -6,7 +6,7 @@ jokeForm.addEventListener('submit',(e) => {
     e.preventDefault();
     const firstName = firstNameInput.value || 'Chuck Norris';
 
-    const url = `https://api.chucknorris.io/jokes/random?name=${firstname}`;
+    const url = `https://api.chucknorris.io/jokes/random?name=${firstName}`;
     fetch(url)
         .then( res => {
             return res.json();
