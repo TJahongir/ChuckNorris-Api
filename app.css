@@ -78,3 +78,8 @@ button {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
 }
+
+img {
+  height: 200px;
+  margin-bottom: 20px;
+}
